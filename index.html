@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>nuMBRS</title>
+    <style>
+    .main {
+        position: relative;
+        z-index: 99;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .info {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 180px;
+    }
+
+    @media all and (max-width: 767px) {
+        .info {
+            text-align: center;
+        }
+    }
+
+    .desc {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .github a {
+        background: #fff;
+        color: #02e08a;
+        padding: 20px 30px;
+        border-radius: 3px;
+        transition: all .3s;
+    }
+
+    .github a:hover {
+        color: #02e08a;
+        opacity: 0.8;
+    }
+
+    .demo {
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        margin-top: -40px;
+        background: url('demo/phone.png') center top no-repeat;
+    }
+
+    .preview {
+        position: relative;
+        top: 66px;
+        width: 300px;
+        height: 528px;
+        margin: 0 auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #fff;
+        text-align: left;
+    }
+
+    .nu-nanbar {
+        position: absolute !important;
+        width: 285px !important;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        background: #02e08a;
+    }
+
+    @font-face {
+        font-family: 'oswaldextralight';
+        src: url('app/fonts/oswald-extralight.woff2') format('woff2'),
+        url('app/fonts/oswald-extralight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+    </style>
+    <link rel="stylesheet" href="app/assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container main">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+                <div class="info">
+                    <div class="logo"><img src="demo/numbrs-logo.png" alt="" /></div>
+                    <div class="desc"><h1>Simple<br>Counter / Todo<br>App</h1></div>
+                    <div class="github"><a href="https://github.com/kulczy/nuMBRZ">view on github</a></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                <div class="demo">
+                    <div class="preview">
+                        <div id="app"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back"></div>
+
+
+    <script src="app/assets/jquery/jquery.js"></script>
+    <script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.nu-list {
+    list-style-type: none;
+    padding: 0;
+
+    .nu-list-item {
+        display: block;
+        height: @list-item-height;
+        border-bottom: 1px solid #eee;
+        overflow: hidden;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .nu-list-params {
+            display:table;
+            width: 100%;
+            height: 100%;
+
+            .nu-list-param {
+                display: table-cell;
+                vertical-align: middle;
+
+                &.nu-list-plus {
+                    width: @nav-height;
+                    cursor: pointer;
+
+                    .nu-list-icon { text-align: right; }
+                    .glyphicon {
+                        color: @main-color;
+                    }
+                }
+
+                &.nu-list-number {
+                    width: 40px;
+                    overflow: hidden;
+                    font-family: 'oswaldextralight';
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: #dbdbdb;
+                    text-align: right;
+                }
+
+                &.nu-list-text {
+                    padding-left: 0;
+                    color: #bbb;
+                    font-size: 10px;
+
+                    .nu-list-title {
+                        font-size: 13px;
+                        color: #222;
+                        margin: 0;
+                    }
+                }
+
+                &.nu-list-minus {
+                    text-align: right;
+                    width: @nav-height;
+                    cursor: pointer;
+                    .nu-list-icon { text-align: left; }
+                }
+            }
+        }
+
+        &.nu-list-item-done {
+            background: #f9f9f9;
+            .nu-list-title { color: #aaa !important; }
+            .glyphicon { color: #ddd !important; }
+        }
+
+        .nu-list-icon {
+            display: inline-block;
+            width: @nav-height/2;
+            height: @nav-height;
+            line-height: @nav-height;
+            text-align: center;
+            color: #ddd;
+            font-size: 10px;
+        }
+    }
+}
